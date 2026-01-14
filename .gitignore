@@ -15,3 +15,13 @@ yarn-error.log*
 # OS trash
 .Trashes
 *.backup
+
+/_trash/
+.DS_Store
+node_modules/
+.vscode/
+test-results/
+tests-screenshots/
+shot-*.png
+*.tgz
+*.VSIXPackage
