@@ -14127,7 +14127,7 @@ body.page-influence .kf-flags .kf-flag{
     padding: 26px;
     border-radius: 20px;
     
-    /* Slightly lighter blur for mobile performance */
+    /* Lighter blur for mobile performance */
     backdrop-filter: blur(14px) saturate(130%);
     -webkit-backdrop-filter: blur(14px) saturate(130%);
     
@@ -14139,7 +14139,21 @@ body.page-influence .kf-flags .kf-flag{
   }
   
   :is(body.page-investment,body.page-main,body.page-credit,body.page-influence,body[data-page^="consumer-protection"],body[data-page="complaint-against-lawyer"],body[data-page="construction-contract"],body[data-page="consumer-goods-refund"],body[data-page="contractor-agreement"],body[data-page="defective-apartment-renovation"],body[data-page="forced-insurance"],body[data-page="furniture-defects"],body[data-page="medical-malpractice"],body[data-page="poor-quality-services"]) .investment-challenges .challenges-cta__inner {
-    backdrop-filter: blur(16px) saturate(140%);
-    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    backdrop-filter: blur(16px) saturate(130%);
+    -webkit-backdrop-filter: blur(16px) saturate(130%);
+  }
+}
+
+/* Low-end device optimization via prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  :is(body.page-investment,body.page-main,body.page-credit,body.page-influence,body[data-page^="consumer-protection"],body[data-page="complaint-against-lawyer"],body[data-page="construction-contract"],body[data-page="consumer-goods-refund"],body[data-page="contractor-agreement"],body[data-page="defective-apartment-renovation"],body[data-page="forced-insurance"],body[data-page="furniture-defects"],body[data-page="medical-malpractice"],body[data-page="poor-quality-services"]) .investment-challenges .challenge-card {
+    /* Reduce blur for accessibility/performance */
+    backdrop-filter: blur(10px) saturate(110%);
+    -webkit-backdrop-filter: blur(10px) saturate(110%);
+  }
+  
+  :is(body.page-investment,body.page-main,body.page-credit,body.page-influence,body[data-page^="consumer-protection"],body[data-page="complaint-against-lawyer"],body[data-page="construction-contract"],body[data-page="consumer-goods-refund"],body[data-page="contractor-agreement"],body[data-page="defective-apartment-renovation"],body[data-page="forced-insurance"],body[data-page="furniture-defects"],body[data-page="medical-malpractice"],body[data-page="poor-quality-services"]) .investment-challenges .challenges-cta__inner {
+    backdrop-filter: blur(12px) saturate(110%);
+    -webkit-backdrop-filter: blur(12px) saturate(110%);
   }
 }
