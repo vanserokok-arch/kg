@@ -13765,7 +13765,7 @@ body.page-influence .kf-flags .kf-flag{
   background: 
     linear-gradient(135deg, 
       rgba(252, 248, 242, 0.95) 0%, 
-      rgba(248, 244, 238, 0.92) 50%,
+      rgba(248, 244, 238, 0.92) 40%,
       rgba(250, 246, 240, 0.94) 100%);
   
   background-blend-mode: normal;
@@ -13876,15 +13876,15 @@ body.page-influence .kf-flags .kf-flag{
   pointer-events: none;
   z-index: 0;
   
-  /* Layered internal light with warm sand + cool ice accents */
+  /* Optimized layered internal light with warm sand + cool ice accents */
   background: 
-    radial-gradient(circle 600px at 20% 15%, 
+    radial-gradient(circle 420px at 20% 15%, 
       rgba(255, 255, 255, 0.45) 0%, 
       transparent 50%),
-    radial-gradient(circle 400px at 80% 85%, 
+    radial-gradient(circle 280px at 80% 85%, 
       rgba(235, 220, 205, 0.18) 0%, 
       transparent 55%),
-    radial-gradient(circle 350px at 95% 10%, 
+    radial-gradient(circle 240px at 95% 10%, 
       rgba(215, 230, 240, 0.14) 0%, 
       transparent 58%);
   
@@ -14086,13 +14086,13 @@ body.page-influence .kf-flags .kf-flag{
 
 @media (hover:hover) and (pointer:fine) {
   :is(body.page-investment,body.page-main,body.page-credit,body.page-influence,body[data-page^="consumer-protection"],body[data-page="complaint-against-lawyer"],body[data-page="construction-contract"],body[data-page="consumer-goods-refund"],body[data-page="contractor-agreement"],body[data-page="defective-apartment-renovation"],body[data-page="forced-insurance"],body[data-page="furniture-defects"],body[data-page="medical-malpractice"],body[data-page="poor-quality-services"]) .investment-challenges .challenge-card:hover {
-    transform: translateY(-5px) scale(1.01);
+    transform: translateY(-5px);
     
     /* Increased clarity + more prominent glass edge */
     background: 
       linear-gradient(135deg, 
         rgba(255, 255, 255, 0.80) 0%, 
-        rgba(252, 250, 248, 0.72) 50%,
+        rgba(252, 250, 248, 0.72) 40%,
         rgba(255, 253, 251, 0.78) 100%);
     
     border-color: rgba(255, 255, 255, 0.48);
@@ -14107,7 +14107,7 @@ body.page-influence .kf-flags .kf-flag{
   }
 
   :is(body.page-investment,body.page-main,body.page-credit,body.page-influence,body[data-page^="consumer-protection"],body[data-page="complaint-against-lawyer"],body[data-page="construction-contract"],body[data-page="consumer-goods-refund"],body[data-page="contractor-agreement"],body[data-page="defective-apartment-renovation"],body[data-page="forced-insurance"],body[data-page="furniture-defects"],body[data-page="medical-malpractice"],body[data-page="poor-quality-services"]) .investment-challenges .faq-ask-btn:hover {
-    transform: translateY(-2px) scale(1.02);
+    transform: translateY(-2px);
     filter: brightness(1.08) saturate(1.08);
     
     box-shadow: 
